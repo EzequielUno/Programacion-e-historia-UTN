@@ -1,0 +1,349 @@
+:root{
+--colorfondo: #181D31;
+--colorcrema: #E6DDC4;
+--colorsombraverde: #678983;
+--colorrecuadrogris: grey;
+/*Color del logo SVG*/
+--colorazulado: #495579;
+--colorcrema: #F0E9D2;
+/*Parrafos*/
+/*titulos*/
+--colorblancoprincipal: #EEEEEE;
+/*Sombras del titulo principal*/
+--colornegro: black;
+--fuente: "Montserrat";
+--tamañoGrande: 60px;
+--tamañoMediano: 40px;
+--tamañoChico: 30px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: var(--colorfondo);
+    font-family: var(--fuente);
+
+}
+
+/* header{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+} */
+
+.logo{
+width: 200px;
+height: 80px;
+}
+
+.codigo{
+    display: flex;
+    background-image: url("./imagenes/codigo.jpg");
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: 180%;
+    height: 80Vh;
+    width: 100%;
+    justify-content: center;
+
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+ul{
+    display: flex;
+    width: 300px;
+}
+
+.menuHeader{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+li{
+    display: list-item;
+    margin: auto 0px;
+}
+
+.botonNav{
+    box-shadow: 2px 3px var(--colorsombraverde);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--colorcrema);
+    color: var(--colorfondo);
+    font-weight: 300;
+}
+
+h1{
+    color: var(--colorblancoprincipal);
+    text-shadow: 2px 3px var(--colorgris),
+                 3px 8px var(--colornegro);
+    text-align: center;
+    margin-top: 20%;
+    font-size: var(--tamañoGrande);
+}
+
+h2{
+    text-shadow: 2px 2px var(--colornegro);
+    font-size: 40px;
+    text-align: center;
+    color: var(--colorsombraverde);
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contenido{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.tarjetas{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.tarjeta{
+    width: 350px;
+    height: 400px;
+    border: 5px solid var(--colorsombraverde);
+    background-color: var(--colorcrema);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta a{
+    color: #F0F5E4;
+}
+.imagenHistoria{
+    display: flex;
+    background-image: url("./imagenes/img1.jpg");
+    width: 100%;
+    height: 100%;
+    margin-top: -85px;
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: 100%; 
+}
+
+.imagenJuego{ 
+    background-image: url("./imagenes/img2.jpg");
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: 100%;
+
+}
+
+.botonTarjeta{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--colorazulado);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px var(--colorsombraverde);
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+
+footer{
+    background-color: var(--colorsombraverde);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: var(--colorfondo);
+}
+
+.imagenLogoPie{
+    background-image: url(./imagenes/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 80px;
+    width: 110px;
+}
+
+.logopie{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+}
+
+.tarjetasHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetaHistoria{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+}
+
+.tarjetaHistoria p{
+    color: var(--colorcrema);
+    display: block;
+}
+
+.tarjetaHistoria div{
+    display: block;
+}
+
+.tarjetaVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.contenedorVideo {
+    padding: 5px;
+    background-color: var(--color);
+    width: 70%;
+    display: block;
+}
+
+video{
+    width: 100%;
+}
+.botonesVideo {
+    display: flex;
+    gap: 20px;
+}
+.botonVideo {
+    box-shadow: 2px 3px var(--colorsombraverde);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--colorcrema);
+    color: var(--colorfondo);
+    font-weight: 300;
+    width: 80px;
+}
+
+.botonVideo:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
+
+.barraVideo {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display {
+    padding-top: 28px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rompecocos{
+    display: flex;
+    flex-direction: row;
+}
+
+.rompecoco{
+    width: 275px;
+    height: 400px;
+    display: flex;
+    border: 2px solid var(--colornegro);
+    background-color: var(--colorgris);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.rompecoco p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--colorcrema);
+}
+
+.rompecoco:hover{
+    background-color: var(--colornegro);
+    
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+
+#imagen1{
+    background-image: url("./imagenes/Rompe1.png");
+    background-repeat: no-repeat;
+    background-position:0%;
+    width: 275px;
+    height: 400px;
+}
+#imagen2{
+    background-repeat: no-repeat;
+    background-position:0%;
+    width: 275px;
+    height: 400px;
+    background-image: url("./imagenes/Rompe2.png");
+}
+#imagen3{
+    background-image: url("./imagenes/Rompe3.png");
+    background-repeat: no-repeat;
+    background-position:0%;
+    width: 275px;
+    height: 400px;
+}
+
+.resetear{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    text-align: center;
+}
