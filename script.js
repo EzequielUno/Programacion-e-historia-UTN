@@ -23,10 +23,10 @@ botonPlay.addEventListener("click", ()=>{
     let duracion = formatoTiempo(video.duration);
     mostrarDisplay = setInterval( () => { 
     let segundos = formatoTiempo(video.currentTime);
-    displayVideo.textContent = segundos + " | " + duracion;},1000);})
+    displayVideo.textContent = segundos + " | " + duracion;},1000);});
 
 botonPause.addEventListener("click", ()=>{
     video.pause();
     clearInterval(mostrarDisplay)
 
-})
+});

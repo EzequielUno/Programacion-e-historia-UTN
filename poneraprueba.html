@@ -12,7 +12,15 @@
 <header>
 
 <nav class="navegacion">
-    <div class="logo"><a href="./index.html">logo</a></div>
+    <div class="logo"><a href="./index.html">
+        <svg width="200" height="80" >
+            <rect class="compuFondo" x="50" y="5" rx="10" fill="#F0E9D2" width="70px" height="40px"></rect>
+            <rect class="compuFrente" x="55" y="10" rx="10" fill="#495579" width="60px" height="30px"></rect>
+            <polygon class="compuFondo" points ="60 50 ,110 50, 130 70, 40 70" fill="#F0E9D2"/>
+            <polygon class="compuFrente" points ="62 53 ,108 53, 123 67, 47 67" fill="#495579"/>
+        </svg>
+    </a>
+</div>
 
     <ul class="menuHeader">    
     <li><a class="botonNav" href="./historia.html">HISTORIA</a></li>
@@ -27,18 +35,18 @@
 <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
 <section class="juego">
     <div class="rompecocos">
-        <div class="rompecoco" id="lugar1"><p>Arrastre y suelte la imágene aquí</p></div>
-        <div class="rompecoco" id="lugar2"><p>Arrastre y suelte la imágene aquí</p></div>
-        <div class="rompecoco" id="lugar3"><p>Arrastre y suelte la imágene aquí</p></div>
+        <div class="rompecoco" id="lugar1"><p>Arrastre y suelte la imágen aquí</p></div>
+        <div class="rompecoco" id="lugar2"><p>Arrastre y suelte la imágen aquí</p></div>
+        <div class="rompecoco" id="lugar3"><p>Arrastre y suelte la imágen aquí</p></div>
     </div>
     
     <div class="imagenes">
-        <div id="imagen1"></div>
-        <div id="imagen2"></div>
-        <div id="imagen3"></div>
+        <img src="./imagenes/rompe2.png" id="imagen1"></img>
+        <img src="./imagenes/rompe3.png" id="imagen2"></img>
+        <img src="./imagenes/rompe1.png" id="imagen3"></img>
     
     </div>
-    <button class="botonVideo resetear">RESETEAR</button>
+    <button class="botonVideo resetear">Reiniciar</button>
 </section>
 
 </main>
@@ -49,6 +57,6 @@
     </div>
     <div>Sitio con fines educativos</div>
 </footer>
-<!-- <script src="./script.js"></script> -->
+<script src="./scriptJuego.js"></script>
 </body>
 </html>

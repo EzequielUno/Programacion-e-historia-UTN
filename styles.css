@@ -38,6 +38,25 @@ width: 200px;
 height: 80px;
 }
 
+.compuFondo{
+animation: aparecer;
+animation-duration: 3s;
+}
+.compuFrente{
+    animation: aparecer;
+    animation-duration: 4s;
+    /* animation-delay: 1s;     */
+}
+
+@keyframes aparecer{
+
+    from{transform: translate(0px, -10px );
+        opacity: 0;}
+    
+    to{transform: translate(0px, 0px);
+        opacity: 1;}
+    
+}
 .codigo{
     display: flex;
     background-image: url("./imagenes/codigo.jpg");
@@ -69,6 +88,7 @@ ul{
 li{
     display: list-item;
     margin: auto 0px;
+    list-style: none;
 }
 
 .botonNav{
@@ -83,10 +103,10 @@ li{
 
 h1{
     color: var(--colorblancoprincipal);
-    text-shadow: 2px 3px var(--colorgris),
+    text-shadow: 2px 3px var(--colorazulado),
                  3px 8px var(--colornegro);
     text-align: center;
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: var(--tamañoGrande);
 }
 
@@ -95,6 +115,7 @@ h2{
     font-size: 40px;
     text-align: center;
     color: var(--colorsombraverde);
+    margin: 80px 0px 0px 0px;
 }
 
 h3 {
@@ -118,8 +139,8 @@ h3 {
 }
 
 .tarjetas{
-    margin: 100px 0px;
-    width: 100%;
+    /* margin: 100px 0px;
+    width: 100%; */
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -217,10 +238,15 @@ footer{
 .tarjetaHistoria p{
     color: var(--colorcrema);
     display: block;
+    width: 40%;
 }
 
 .tarjetaHistoria div{
     display: block;
+}
+
+.tarjetaHistoria div p{
+    width: 100%;
 }
 
 .tarjetaVideo {
@@ -291,7 +317,7 @@ video{
     height: 400px;
     display: flex;
     border: 2px solid var(--colornegro);
-    background-color: var(--colorgris);
+    background-color: var(--colorrecuadrogris);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -307,7 +333,7 @@ video{
 }
 
 .rompecoco:hover{
-    background-color: var(--colornegro);
+    background-color: #302d2d;
     
 }
 
@@ -318,8 +344,18 @@ video{
     margin: 40px;
 }
 
+.imagenes img{
+    width: 275px;
+    height: 400px;
 
-#imagen1{
+}
+
+.rompecoco img{
+    width: 275px;
+    height: 400px;
+    
+}
+/* #imagen1{
     background-image: url("./imagenes/Rompe1.png");
     background-repeat: no-repeat;
     background-position:0%;
@@ -339,11 +375,16 @@ video{
     background-position:0%;
     width: 275px;
     height: 400px;
+} */
+
+.ocultar {
+    display: none;
+
 }
 
 .resetear{
     display: flex;
-    margin: auto;
-    padding: 10px 100px;
-    text-align: center;
+    margin: 0px 0px 20px 0px; 
+    justify-content: center;
+    width: 230px;
 }
