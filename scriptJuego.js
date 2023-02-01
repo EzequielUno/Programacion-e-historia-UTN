@@ -20,6 +20,7 @@ const finalTraslado = (evento) => {
     let imagen=evento.target;
     // imagen.style.visibility="hidden";
     // imagen.style.display="none";
+
     imagen.classList.add("ocultar");
 
 }
